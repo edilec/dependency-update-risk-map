@@ -1,0 +1,20 @@
+{
+  "name": "dependency-update-risk-map",
+  "version": "0.1.0",
+  "description": "Rank dependency updates by change surface, exposure and rollback cost.",
+  "type": "module",
+  "bin": { "dependency-update-risk-map": "./bin/dependency-update-risk-map.mjs" },
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "lint": "node --check src/index.mjs && node --check bin/dependency-update-risk-map.mjs",
+    "test": "node --test",
+    "check": "npm run lint && npm test"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/edilec/dependency-update-risk-map"
+  }
+}
